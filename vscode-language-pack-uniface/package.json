@@ -1,0 +1,22 @@
+{
+  "name": "vscode-language-pack-uniface",
+  "displayName": " uniface Language Pack",
+  "description": "Language pack extension for  uniface",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Language Packs"
+  ],
+  "contributes": {
+    "localizations": [{
+      "languageId": "uniface",
+      "languageName": " uniface",
+      "localizedLanguageName": " uniface"
+    }]
+  },
+  "scripts": {
+    "update": "cd ../vscode && npm run update-localization-extension uniface"
+  }
+}

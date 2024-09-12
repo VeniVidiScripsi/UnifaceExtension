@@ -1,0 +1,34 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "UNIFACE",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"match": "\\b(ADD|AND|ANY|APPEND|ARRAY|BEGIN|BREAK|CASE|CDECL|CONST|CONTINUE|CREATE|CURSOR|DEALLOCATE|DEFAULT|DEFINE|DELETE|DESCRIBE|DISPLAY|DIV|DO|DOUBLE|ELSE|ELSEIF|END|ENTRY|ENUM|EQUATE|ERROR|EXIT|EXPORT|FETCH|FIELD|FILE|FINALLY|FOR|FORWARD|FUNCTION|GLOBAL|GOTO|IF|IMPORT|INCLUDE|INHERIT|INIT|INSTANCE|INTEGER|INTERFACE|INVERT|LABEL|LOAD|LOOP|MOD|MODULE|NEXT|NIL|NOT|OF|ON|OR|OTHERWISE|PARAMETER|PRINT|PROCEDURE|PROGRAM|PROPERTY|PROTOTYPE|PUBLIC|READ|READONLY|REAL|RECORD|RELEASE|RETURN|RETRY|REVERT|SELECT|SELF|SET|SIGNAL|SINCE|SIZEOF|STATIC|STRING|STRUCT|SWITCH|THROW|TO|TRY|TYPE|UNDEFINE|UNLOAD|UNTIL|UPDATE|USE|USING|VAR|VARIANT|VIEW|VOID|WHILE|WITH|XOR|ZEROFILL)\\b",
+					"name": "keyword.uniface"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.uniface",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.uniface",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": ""
+}
